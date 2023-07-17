@@ -1,6 +1,7 @@
 import { Button, ButtonProps } from '@chakra-ui/react';
 import { TTUIVariant } from '../../model';
 import { ReactNode } from 'react';
+import { getGeneralStyles } from './styles';
 
 interface TTUIButtonProps extends ButtonProps {
   variant?: TTUIVariant;
@@ -14,16 +15,8 @@ export const WhiteButton = ({
   disabled,
   ...rest
 }: TTUIButtonProps) => {
-  const getGeneralStyles = (): ButtonProps => {
-    return {
-      _hover: { bgColor: 'none', cursor: disabled ? 'not-allowed' : 'pointer' },
-      _active: { bgColor: 'none' },
-      opacity: disabled ? 0.4 : 1,
-    };
-  };
-
   const getChakraButton = (props: ButtonProps): ReactNode => (
-    <Button {...getGeneralStyles()} {...props} {...rest}>
+    <Button {...getGeneralStyles(disabled)} {...props} {...rest}>
       {children || 'Button'}
     </Button>
   );
