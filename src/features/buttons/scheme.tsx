@@ -11,7 +11,7 @@ const ButtonsSchemePage = () => {
           Primary
         </Heading>
 
-        <Flex gap={4}>
+        <Flex gap={4} flexWrap="wrap">
           <TTUIButton>Default</TTUIButton>
           <TTUIButton variant="outline" borderStyle="dashed">
             Outline
@@ -28,7 +28,7 @@ const ButtonsSchemePage = () => {
           Secondary
         </Heading>
 
-        <Flex gap={4}>
+        <Flex gap={4} flexWrap="wrap">
           <TTUIButton colorScheme="secondary">Default</TTUIButton>
           <TTUIButton colorScheme="secondary" variant="outline">
             Outline
@@ -51,7 +51,7 @@ const ButtonsSchemePage = () => {
           Warning
         </Heading>
 
-        <Flex gap={4}>
+        <Flex gap={4} flexWrap="wrap">
           <TTUIButton colorScheme="warning">Default</TTUIButton>
           <TTUIButton colorScheme="warning" variant="outline">
             Outline
@@ -74,7 +74,7 @@ const ButtonsSchemePage = () => {
           Danger
         </Heading>
 
-        <Flex gap={4}>
+        <Flex gap={4} flexWrap="wrap">
           <TTUIButton colorScheme="danger">Default</TTUIButton>
           <TTUIButton colorScheme="danger" variant="outline">
             Outline
@@ -97,7 +97,7 @@ const ButtonsSchemePage = () => {
           Info
         </Heading>
 
-        <Flex gap={4}>
+        <Flex gap={4} flexWrap="wrap">
           <TTUIButton colorScheme="info">Default</TTUIButton>
           <TTUIButton colorScheme="info" variant="outline">
             Outline
@@ -120,7 +120,7 @@ const ButtonsSchemePage = () => {
           Light
         </Heading>
 
-        <Flex gap={4}>
+        <Flex gap={4} flexWrap="wrap">
           <TTUIButton colorScheme="light">Default</TTUIButton>
           <TTUIButton colorScheme="light" variant="outline">
             Outline
@@ -143,7 +143,7 @@ const ButtonsSchemePage = () => {
           Dark
         </Heading>
 
-        <Flex gap={4}>
+        <Flex gap={4} flexWrap="wrap">
           <TTUIButton colorScheme="dark">Default</TTUIButton>
           <TTUIButton colorScheme="dark" variant="outline">
             Outline
