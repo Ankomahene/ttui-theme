@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { HashRouter, Link, Route, Routes } from 'react-router-dom';
 import { Header } from './components/Header';
 import ButtonsSchemePage from './features/buttons/scheme';
 import ButtonsVariantsPage from './features/buttons/variants';
@@ -8,7 +8,7 @@ import ButtonsPage from './features/buttons';
 function App() {
   return (
     <Box bgColor={useColorModeValue('gray.100', 'gray.800')}>
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <Flex>
           <Box
@@ -47,7 +47,7 @@ function App() {
             </Routes>
           </Box>
         </Flex>
-      </BrowserRouter>
+      </HashRouter>
     </Box>
   );
 }
