@@ -1,11 +1,13 @@
 import {
   Button,
   Flex,
+  HStack,
   Text,
   useColorMode,
   useColorModeValue,
 } from '@chakra-ui/react';
 import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md';
+import { DrawerMenu } from './DrawerMenu';
 
 export const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -19,7 +21,10 @@ export const Header = () => {
       justify="space-between"
       height="70px"
     >
-      <Text>TTUI Theme</Text>
+      <HStack>
+        <DrawerMenu />
+        <Text>TTUI Theme</Text>
+      </HStack>
       <Text
         color={useColorModeValue('gray.600', 'gray.100')}
         mr={2}
