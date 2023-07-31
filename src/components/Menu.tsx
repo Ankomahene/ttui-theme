@@ -1,4 +1,4 @@
-import { Box, Text, useColorModeValue } from '@chakra-ui/react';
+import { Box, Divider, Text, useColorModeValue } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
 interface MenuProps {
@@ -13,6 +13,9 @@ export const Menu = ({ onSelect }: MenuProps) => {
 
       <MenuButton onSelect={onSelect} label="Scheme" link="/buttons/scheme" />
       <MenuButton onSelect={onSelect} label="Variants" link="/buttons" />
+
+      <Divider />
+      <MenuButton onSelect={onSelect} label="Badge" link="/badge" />
     </Box>
   );
 };

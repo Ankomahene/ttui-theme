@@ -12,6 +12,7 @@ export const brandColors = {
   dark: 'hsl(0, 0%, 0%)', //000000
 };
 
+// shades
 export const colors = {
   brand: {
     ...brandColors,

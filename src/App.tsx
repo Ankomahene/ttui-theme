@@ -5,6 +5,7 @@ import { Menu } from './components/Menu';
 import ButtonsPage from './features/buttons';
 import ButtonsSchemePage from './features/buttons/scheme';
 import ButtonsVariantsPage from './features/buttons/variants';
+import BadgePage from './features/badge';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
                 <Route index element={<ButtonsVariantsPage />} />
                 <Route path="scheme" element={<ButtonsSchemePage />} />
               </Route>
+              <Route path="badge" element={<BadgePage />} />
             </Routes>
           </Box>
         </Flex>
