@@ -1,15 +1,14 @@
 import {
   Badge,
-  Button,
   Card,
   Flex,
   Heading,
   Text,
   useColorMode,
 } from '@chakra-ui/react';
+import { BiEnvelope } from 'react-icons/bi';
 import { bgColors } from '../../colors';
 import { TTUIButton } from '../../components/TTUIButton/TTUIButton';
-import { BiEnvelope } from 'react-icons/bi';
 
 export const ButtonBadge = () => {
   const { colorMode } = useColorMode();
